@@ -1,0 +1,51 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "2b0c9d7e052d5b70c591",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"45aaf821d515295450b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":320.85027088581387,\"y\":110.24811070085234,\"z\":0,\"width\":456.5402532868629,\"height\":480.56868767038196,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Categories.CategoryName\"},{\"queryRef\":\"Orders.TotalSales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Categories\",\"Type\":0},{\"Name\":\"o\",\"Entity\":\"Orders\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CategoryName\"},\"Name\":\"Categories.CategoryName\",\"NativeReferenceName\":\"CategoryName\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"TotalSales\"},\"Name\":\"Orders.TotalSales\",\"NativeReferenceName\":\"TotalSales\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 480.57,
+          "width": 456.54,
+          "x": 320.85,
+          "y": 110.25,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e95061823271f1c2bd40\",\"layouts\":[{\"id\":0,\"position\":{\"x\":617.0798898071625,\"y\":92.85583103764921,\"z\":1,\"width\":626.4830119375573,\"height\":480.73461891643706,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Categories.CategoryName\"},{\"queryRef\":\"Product.ProductName\"},{\"queryRef\":\"Sum(Orders Details.Quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Categories\",\"Type\":0},{\"Name\":\"o\",\"Entity\":\"Orders Details\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ProductName\"},\"Name\":\"Product.ProductName\",\"NativeReferenceName\":\"ProductName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CategoryName\"},\"Name\":\"Categories.CategoryName\",\"NativeReferenceName\":\"CategoryName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Quantity\"}},\"Function\":0},\"Name\":\"Sum(Orders Details.Quantity)\",\"NativeReferenceName\":\"Sum of Quantity\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 480.73,
+          "width": 626.48,
+          "x": 617.08,
+          "y": 92.86,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
